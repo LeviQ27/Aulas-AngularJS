@@ -1,0 +1,17 @@
+<h1>{{vm.texto}}</h1>
+<div class="container">
+    <form>
+        <div class="form-group">
+          <label for="nome" class="form-label">Nome:</label>
+          <input type="text" class="form-control" id="nome" ng-model="vm.cliente.nome" placeholder="Nome do cliente" autocomplete="off">
+        </div>
+          
+        <div class="form-group">
+          <label for="rg" class="form-label">RG:</label>
+          <input type="number" class="form-control" id="rg" ng-model="vm.cliente.rg" placeholder="RG do cliente">
+        </div>
+        
+        <button type="button" class="btn btn-outline-primary" ng-click="vm.cadastrar()">{{vm.textoBotao}}</button>
+        <button type="button" class="btn btn-outline-secondary" ng-click="vm.limpar()">Limpar</button>
+      </form>
+</div>
